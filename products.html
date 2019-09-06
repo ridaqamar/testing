@@ -21,158 +21,174 @@
     background-size: cover;
     background-attachment: fixed;
   }
-  footer{
-    position: absolute;
-    bottom: 0;
-  }
-    @media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : portrait) {
- .f{
-position: static;
-bottom: 0;
-text-align: center;
-  }
-  footer{
-    position: static;
-    bottom: 0;
-    text-align: center;
-  }
+  .main-footer {
+  padding: 10px;
+  color: #444;
+  border-top: 1px solid #d2d6de;
+  text-align:center;
+  width: 100%;
 }
+  @media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) {
+  .main-footer {
+    padding: 10px;
+    color: #444;
+    border-top: 1px solid #d2d6de;
+    text-align:center;
+    width: 100%;}
+}
+ 
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
-and (-webkit-device-pixel-ratio : 3)
 and (orientation : portrait) {
- .f{
-position: static;
-bottom: -2%;
-text-align: center;
+ 
+ .main-footer {
+    padding: 10px;
+    color: #444;
+    border-top: 1px solid #d2d6de;
+    text-align:center;
+    width: 100%;
+    /* position: fixed;
+    bottom:0; */
   }
-  footer{
-    position: static;
-    bottom: -2%;
-    text-align: center;
+}
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : portrait) {
+ 
+ .main-footer {
+    padding: 10px;
+    color: #444;
+    border-top: 1px solid #d2d6de;
+    text-align:center;
+    width: 100%;
+    position: fixed;
+    bottom:0;
   }
 }
   </style>
 </head>
 <body>
- <div id="mySidenav" class="sidenav">
-<div id="nav-titles">
-  
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="links">
-    <a href="index.html"><img src="imgs/new-logo.png" width="150px"></a>
-  <a href="index.html">Home</a>
-  <a href="products.html">Products</a>
-  <a href="news.html">News & Events</a>
-  <a href="author.html">About The Author</a>
-  <a href="Testimonials.html">Testimonials</a>
-  <a href="contact.html">Contact Us</a>
-  </div>
-</div>
-</div>
-
-<!-- <span style="font-size:60px;cursor:pointer" class="hamburger" onclick="openNav()">&#9776;
- <img src="imgs/bars-1.png"><a href="index.html"><img src="imgs/new-logo.png" width="100px"></a></span>
- -->
- <div class="hamburger" onclick="openNav()" id="mySidenav" >
-  <div class="top-bun"></div>
-  <div class="meat"></div>
-  <div class="bottom-bun"></div>
-</div>
-<a href="index.html"><img src="imgs/new-logo.png" class="logo-nav"></a>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <img src="imgs/Product-banner.png" width="100%">
+ <header>
+  <div id="mySidenav" class="sidenav">
+    <div id="nav-titles">
+      
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="links">
+        <a href="index.html"><img src="imgs/new-logo.png" width="150px"></a>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="news.html">News & Events</a>
+      <a href="author.html">About The Author</a>
+      <a href="Testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact Us</a>
+      </div>
     </div>
-  </div>
+    </div>
+    
+    <!-- <span style="font-size:60px;cursor:pointer" class="hamburger" onclick="openNav()">&#9776;
+     <img src="imgs/bars-1.png"><a href="index.html"><img src="imgs/new-logo.png" width="100px"></a></span>
+     -->
+     <div class="hamburger" onclick="openNav()" id="mySidenav" >
+      <div class="top-bun"></div>
+      <div class="meat"></div>
+      <div class="bottom-bun"></div>
+    </div>
+    <a href="index.html"><img src="imgs/new-logo.png" class="logo-nav"></a>
+    
+ </header>
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="imgs/Product-banner.png" width="100%">
+      </div>
+    </div>
+    
+          <div class="row product-cards" id="card-row" style="margin-bottom: 10%;">
   
-        <div class="row product-cards" id="card-row" style="margin-bottom: 10%;">
-
-             <div class="col-md-4">
-                 <div class="card" id="card-1">
-                     <a href="humangenealogy.html"><img src="imgs/cover.png" style="width:100%;height:200px"></a>
-                     <div class="detail">
-                     <h1>Human Genealogy</h1>
-                     <p class="price">Book</p>
-                     <p>Click on image to view more!</p>
-                     <h3>$35</h3> 
-                     <p>(exclusive of taxes)</p>
-                     <!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="73CBRCPL9Q472">
-<p><button type="submit" name="submit">Add to Cart</button></p> -->
-<!-- </form> -->
-<p><button>Buy Now!</button></p>
-
-
-                 </div>
-                 </div>
-             </div>
-
-             <div class="col-md-4">
-                 <div class="card" id="card-2">
-                     <a href="ebook.html"><img src="imgs/p2.png" style="max-width:100%;height:200px"></a>
-                     <div class="detail">
-                     <h1>Human Genealogy</h1>
-                     <p class="price">E-book</p>
-                     <p>Click on image to view more!</p>
-                     <h3>$35</h3> 
-                     <p>(exclusive of taxes)</p>
-                     <!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="BMNTRMUNWRT42">
-<p><button type="submit" name="submit">Add to Cart</button></p> -->
-<!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> -->
-<!-- </form> -->
-<p><button>Buy Now!</button></p>
-                     
-                 </div>
-                 </div>
-                 </div>
-             
-
-             <div class="col-md-4">
-                 <div class="card" id="card-3">
-                     <a href="poster.html"><img src="imgs/poster.png" style="width:100%;height:200px"></a>
-                     <div class="detail">
-                     <h1>Human Flagship</h1>
-                     <p class="price">Poster Chart</p>
-                     <p>Click on image to view more!</p>
-                     <h3>$30</h3> 
-                     <p>(exclusive of taxes)</p>
-                     <!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="SAQJCHPAY3EMJ">
-<p><button name="submit" type="submit">Add to Cart</button></p> -->
-<!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> -->
-<!-- </form> -->
-<p><button>Buy Now!</button></p>
-                 </div>
-                 </div>
-                 </div>
-             </div>
-         </div>
-
-        <!-- Copyright -->
-        <!-- <div class="footer-copyright f">
-            <a href="#" id="humangenealogy">www.humangenealogy.com</a>
-            <br>
-            © 2018 - <a href="www.reonnet.com"><span id="reonnet" style="color: red;">Reonnet.</span></a>All Rights Reserved.
-        </div> -->
-        <!-- Copyright -->
-
-        <div class="footer">
-  <p>Footer</p>
-</div>
+               <div class="col-md-4">
+                   <div class="card" id="card-1">
+                       <a href="humangenealogy.html"><img src="imgs/cover.png" style="width:100%;height:200px"></a>
+                       <div class="detail">
+                       <h1>Human Genealogy</h1>
+                       <p class="price">Book</p>
+                       <p>Click on image to view more!</p>
+                       <h3>$35</h3> 
+                       <p>(exclusive of taxes)</p>
+                       <!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+  <input type="hidden" name="cmd" value="_s-xclick">
+  <input type="hidden" name="hosted_button_id" value="73CBRCPL9Q472">
+  <p><button type="submit" name="submit">Add to Cart</button></p> -->
+  <!-- </form> -->
+  <p><button>Buy Now!</button></p>
+  
+  
+                   </div>
+                   </div>
+               </div>
+  
+               <div class="col-md-4">
+                   <div class="card" id="card-2">
+                       <a href="ebook.html"><img src="imgs/p2.png" style="max-width:100%;height:200px"></a>
+                       <div class="detail">
+                       <h1>Human Genealogy</h1>
+                       <p class="price">E-book</p>
+                       <p>Click on image to view more!</p>
+                       <h3>$35</h3> 
+                       <p>(exclusive of taxes)</p>
+                       <!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+  <input type="hidden" name="cmd" value="_s-xclick">
+  <input type="hidden" name="hosted_button_id" value="BMNTRMUNWRT42">
+  <p><button type="submit" name="submit">Add to Cart</button></p> -->
+  <!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> -->
+  <!-- </form> -->
+  <p><button>Buy Now!</button></p>
+                       
+                   </div>
+                   </div>
+                   </div>
+               
+  
+               <div class="col-md-4">
+                   <div class="card" id="card-3">
+                       <a href="poster.html"><img src="imgs/poster.png" style="width:100%;height:200px"></a>
+                       <div class="detail">
+                       <h1>Human Flagship -</h1>
+                       <p class="price">Poster Chart</p>
+                       <p>Click on image to view more!</p>
+                       <h3>$30</h3> 
+                       <p>(exclusive of taxes)</p>
+                       <!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+  <input type="hidden" name="cmd" value="_s-xclick">
+  <input type="hidden" name="hosted_button_id" value="SAQJCHPAY3EMJ">
+  <p><button name="submit" type="submit">Add to Cart</button></p> -->
+  <!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> -->
+  <!-- </form> -->
+  <p><button>Buy Now!</button></p>
+                   </div>
+                   </div>
+                   </div>
+               </div>
+           </div>
+  
+</main>
+<footer class="main-footer">
+  <div class="container">
+    <div>
+      <a href="#" id="humangenealogy">www.humangenealogy.com</a>
+    </div>
+    <strong>Copyright ©  <a href="www.reonnet.com" id="reonnet">Reonnet</a>.</strong> All rights
+    reserved.
+  </div>
+  <!-- /.container -->
+</footer>
 </body>
 
 </html>
