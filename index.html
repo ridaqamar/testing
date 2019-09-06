@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Home</title>
+		<meta name="description" content="Blueprint: Background Slideshow" />
+		<meta name="keywords" content="blueprint, background image slideshow, fullscreen slideshow, jquery, fullscreen image, web development" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+    <style type="text/css">
+      h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+      }
+
+.border{
+  background-color: rgba(255,0,0,0.5);
+  border-radius: 5%;
+}
+
+    </style>
+	</head>
+	<body>
+			<header class="clearfix">
+				<div id="mySidenav" class="sidenav">
+<div id="nav-titles">
+  
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="links">
+    <a href="index.html"><img src="imgs/new-logo.png" width="150px"></a>
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="news.html">News & Events</a>
+  <a href="author.html">About The Author</a>
+  <a href="Testimonials.html">Testimonials</a>
+  <a href="contact.html">Contact Us</a>
+  </div>
+</div>
+</div>
+
+<!-- <span style="font-size:60px;cursor:pointer" class="hamburger" onclick="openNav()">&#9776;
+ <img src="imgs/bars-1.png"><a href="index.html"><img src="imgs/new-logo.png" width="100px"></a></span>
+ -->
+ <div class="hamburger" onclick="openNav()" id="mySidenav" >
+  <div class="top-bun"></div>
+  <div class="meat"></div>
+  <div class="bottom-bun"></div>
+</div>
+<a href="index.html"><img src="imgs/new-logo.png" class="logo-nav"></a>
+
+
+			</header>	
+			<div class="main">
+				<ul id="cbp-bislideshow" class="cbp-bislideshow">
+					<li>
+                <div class="transparency container">
+                    <img src="imgs/left.jpeg" alt="image01" />
+                    <button class="btn"> <a href="humangenealogy.html">Human Genealogy</a></button>
+                </div>
+
+
+            </li>
+            <li class="container"><img src="imgs/right.jpeg" alt="image02" />
+               <a href="products.html"><button class="btn">Products</button></a>
+            </li>
+            <li class="container"><img src="imgs/new-t.jpg" alt="image03" />
+             <a href="Testimonials.html"> <button class="btn">Testimonials</button></a>
+            </li>
+				</ul>
+				<div id="cbp-bicontrols" class="cbp-bicontrols">
+					<span class="cbp-biprev" style="transform: rotate(90deg);"></span>
+					<span class="cbp-bipause" style="transform: rotate(360deg);"></span>
+					<span class="cbp-binext" style="transform: rotate(90deg);"></span>
+				</div>
+			</div>
+     <!--  <div id="mySidenav" class="sidenav" style="z-index: 1;">
+                <div id="nav-titles">
+
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="links">
+                        <a href="index.html"><img src="imgs/new-logo.png" width="150px"></a>
+                        <a href="index.html">Home</a>
+                        <a href="products.html">Products</a>
+                        <a href="news.html">News & Events</a>
+                        <a href="author.html">About The Author</a>
+                        <a href="Testimonials.html">Testimonials</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hamburger" onclick="openNav()" id="mySidenav">
+                    <div class="top-bun"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bun"></div>
+                </div>
+                <a href="index.html"><img src="imgs/new-logo.png" class="logo-nav"></a>
+            </div>
+	 -->	</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="custom.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!-- imagesLoaded jQuery plugin by @desandro : https://github.com/desandro/imagesloaded -->
+		<script src="js/jquery.imagesloaded.min.js"></script>
+		<script src="js/cbpBGSlideshow.min.js"></script>
+		<script>
+			$(function() {
+				cbpBGSlideshow.init();
+			});
+		</script>
+	</body>
+</html>

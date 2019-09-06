@@ -1,0 +1,775 @@
+  @import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700);
+
+  body{
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: quicksand;
+      font-size: 20px;
+
+    }
+
+    /* Navigation */
+
+.nav-top{
+  z-index: 1;
+}
+
+.logo-nav{
+  position: relative;
+  top: -32px;
+  left: 90px;
+  width: 100px;
+}   
+
+
+.hamburger{
+  margin-left: 3%;
+}
+
+.hamburger {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 25px;
+
+}
+.meat{
+  height: 1px;
+}
+.hamburger div {
+  align-self: flex-end;
+  height: 2px;
+  width: 100%;
+  background: rgb(255,0,10);
+}
+.hamburger .meat {
+  width: 75%;
+  transition: all 200ms ease-in-out;
+}
+.hamburger .bottom-bun {
+  width: 50%;
+  transition: all 400ms ease-in-out;
+}
+.hamburger:hover div {
+  width: 100%;
+}
+.hamburger:hover .top-bun {
+  -webkit-animation: burger-hover 1s infinite ease-in-out alternate;
+          animation: burger-hover 1s infinite ease-in-out alternate;
+}
+.hamburger:hover .meat {
+  -webkit-animation: burger-hover 1s infinite ease-in-out alternate forwards 200ms;
+          animation: burger-hover 1s infinite ease-in-out alternate forwards 200ms;
+}
+.hamburger:hover .bottom-bun {
+  -webkit-animation: burger-hover 1s infinite ease-in-out alternate forwards 400ms;
+          animation: burger-hover 1s infinite ease-in-out alternate forwards 400ms;
+}
+
+@-webkit-keyframes burger-hover {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes burger-hover {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(176,224,230,0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; 
+}
+
+.sidenav div{
+  margin-top: 20%;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 22px;
+  color: red;
+  display: block;
+  transition: 0.3s;
+  text-align: left;
+  padding-left: 9%;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  text-decoration: underline;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Index */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 100vh;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: rgba(255,0,0,0.6);
+            color: white;
+            font-size: 32px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        
+        .container .btn:hover {
+            background-color: rgba(255,0,0,0.3);
+        }
+
+#example-3 {
+  position: absolute;
+  top: 30%;
+}
+
+/*div {
+  font-size: 15px;
+}*/
+
+.image,.image2,.image3:hover{
+opacity: 0.5;
+}
+
+.image {
+width: 230px;
+height: 230px;
+/*  margin: 20px auto;
+*/  background:
+radial-gradient(
+transparent 21%, rgba(0,255,0, .3) 21%,
+rgba(0,255,0, .3) 22%,transparent 28%),
+radial-gradient(
+transparent 36%,rgba(233,233,246, .3) 40%,
+rgba(0,255,0, .3) 42%,transparent 50%),
+radial-gradient(
+transparent 60%,rgba(233,233,246, .3) 65%,
+rgba(0,255,0, .3) 66%,transparent 70%);
+background-size:0 0,0 0,0 0;
+background-position:center;
+background-repeat:no-repeat;
+animation:change 3s linear;
+border:none;
+}
+@keyframes change{
+0% {
+background-size:0 0,0 0,0 0;
+}
+25% {
+background-size:0 0,0 0,40% 40%;
+}
+50% {
+background-size:10% 10%,50% 50%,70% 70%;
+}
+75% {
+background-size:80% 80%,80% 80%,80% 80%;
+}
+100% {
+background-size:100% 100%,100% 100%,100% 100%;
+}
+}
+.image2 {
+width: 227px;
+height: 227px;
+/*  margin: 20px auto;
+*/  background:
+radial-gradient(
+transparent 21%, rgba(128,0,0,0.3) 21%,
+rgba(128,0,0,0.3) 22%,transparent 28%),
+radial-gradient(
+transparent 36%,rgba(128,0,0,0.3) 40%,
+rgba(128,0,0,0.3) 42%,transparent 50%),
+radial-gradient(
+transparent 60%,rgba(128,0,0,0.3) 65%,
+rgba(128,0,0,0.3) 66%,transparent 70%);
+background-size:0 0,0 0,0 0;
+background-position:center;
+background-repeat:no-repeat;
+animation:change 5s linear;
+border:none;
+}
+@keyframes change{
+0% {
+background-size:0 0,0 0,0 0;
+}
+25% {
+background-size:0 0,0 0,40% 40%;
+}
+50% {
+background-size:10% 10%,50% 50%,70% 70%;
+}
+75% {
+background-size:80% 80%,80% 80%,80% 80%;
+}
+100% {
+background-size:100% 100%,100% 100%,100% 100%;
+}
+}
+.image3 {
+width: 210px;
+height: 210px;
+/*  margin: 20px auto;
+*/  background:
+radial-gradient(
+transparent 21%, rgba(0,0,128, .3) 21%,
+rgba(0,0,128, .3) 22%,transparent 28%),
+radial-gradient(
+transparent 36%,rgba(0,0,128, .3) 40%,
+rgba(0,0,128, .3) 42%,transparent 50%),
+radial-gradient(
+transparent 60%,rgba(0,0,128, .3) 65%,
+r gba(0,0,128, .3) 66%,transparent 70%);
+background-size:0 0,0 0,0 0;
+background-position:center;
+background-repeat:no-repeat;
+animation:change 7s linear;
+border:none;
+}
+@keyframes change{
+0% {
+background-size:0 0,0 0,0 0;
+}
+25% {
+background-size:0 0,0 0,40% 40%;
+}
+50% {
+background-size:10% 10%,50% 50%,70% 70%;
+}
+75% {
+background-size:80% 80%,80% 80%,80% 80%;
+}
+100% {
+background-size:100% 100%,100% 100%,100% 100%;
+}
+} 
+
+#i1{
+  position: fixed; 
+  top:33%; 
+  left: 16%; 
+}
+
+#i2{
+  position: fixed; 
+  top:33%; 
+  left: 40%; 
+}
+#i3{
+  position: fixed; 
+  top:35%; 
+  left: 68%; 
+}
+
+.box-3 img{
+  height: 210px;
+  width: 210px;
+}
+
+/*  Human Genealogy */
+
+
+.quotes p{
+  font-style: italic !important;
+}
+ul{
+  list-style: circle;
+}
+
+.home-row{
+  width: 100%;
+  height: 100vh;
+}
+
+
+/* Products */
+
+
+.product-cards{
+  margin: 8% 0 5% 0;
+}
+.card{
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 20px;
+}
+.card img{
+  border-radius: 10px;
+}
+.detail{
+  padding: 3% 3% 3% 3%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgba(255,0,0,0.9);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card img:hover{
+  opacity: 0.5;
+}
+
+.poster-btn button{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgba(255,0,0,0.9);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+
+.poster-btn button:hover {
+  opacity: 0.7;
+}
+
+.button-poster{
+  margin: 2% 0 0 0;
+}
+
+.button-HG{
+  margin: 2% 0 0 0;
+}
+
+.back:hover{
+  opacity: 0.7;
+}
+
+/* News And Events */
+
+
+
+
+
+/* About The Author */
+
+
+.material{
+  margin-top: 8%;
+  margin-bottom: 8%;
+/*  background-color: rgba(255,255,255,0.7);
+*/color: black; 
+}
+
+
+
+
+/* Testimonials */
+
+.Click{
+  color: blue !important;
+  font-size: 12px !important;
+}
+.Click:hover{
+  opacity: 50%;
+}
+.name p{
+  text-align: left;
+  font-family: georgia;
+  font-style: italic;
+}
+
+.hidden{
+  display: none;
+}
+
+.reviews{
+  margin-top: 8%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.product-heading,.tes{
+  font-family: georgia;
+  font-style: italic;
+  border-top: 2px dotted red;
+  border-bottom: 2px solid red;
+  color: red;
+  font-weight: bold;
+  margin-top: 5%;
+  padding: 20px 0 20px 0;
+}
+
+button{
+  background-color: transparent;
+}
+
+
+.back{
+  height: 70px;
+  width: 60px;
+}
+
+/* Contact Us */
+
+.contact-content{
+  background-image: url("contact-overlay.jpg");
+}
+.content{
+  /*width: 100%;
+  background-color: rgba(255,255,255,0.7);
+  margin: 10% 0 10% 0;
+  text-align: center;
+  padding: 5% 0 10% 0;
+  border-radius: 20px;*/
+}
+
+.content{
+  margin:10% 0 10% 0 !important;
+}
+
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Iphone Responsiveness */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+  .logo-nav{
+    position: relative;
+    top: -32px;
+/*    left: 30px;
+*/  }
+  /* Index */
+  
+  /* Products */
+  .card{
+    height:150px;
+    width: 100px;
+  }
+  
+
+  /* News */
+  .news-row{
+    width: 100%;
+
+  }
+  .news-row-1{
+    margin-bottom: 400px;
+
+  }
+  .news-row col-md-1{
+    width: 10%;
+  }
+  .news-row col-md-10{
+    width: 80%;
+  }
+
+.news-icons:hover{
+  opacity: 0.8;
+  font-size: 32px;
+}
+
+  .material{
+  padding-top: 3%;
+  margin-bottom: 8%;
+}
+.news-row-1{
+  padding-top: 12%;
+}
+
+/* Footer */
+#humangenealogy{
+  color: red;
+}
+#humangenealogy:hover{
+  text-decoration-color: red;
+}
+#reonnet{
+  color: red;
+}
+#reonnet:hover{
+  text-decoration-color: red;
+}
+
+/* ///////////////// */
+a{
+  color: black;
+  font-size: 18px;
+}
+.empty{
+  min-height: 300px;
+}
+.col{
+  position: relative;
+  bottom: 100px;
+}
+.overlap{
+  position: relative;
+  top: -300px;
+  text-align: center;
+}
+
+body {
+  font-family:Rubik,sans-serif;
+  position:relative;
+  font-weight:400;
+  font-size:15px
+ }
+ ul {
+  padding:0;
+  margin:0
+ }
+ li {
+  list-style:none}
+ a:focus,a:hover {
+  text-decoration:none;
+  -webkit-transition:.3s ease;
+  -o-transition:.3s ease;
+  transition:.3s ease
+ }
+ a:focus {
+  outline:0
+ }
+ img {
+  max-width:100%
+ }
+ p {
+  font-size:16px;
+  line-height:30px;
+  color: black;
+ }
+ h4 {
+  font-family:Rubik,sans-serif;
+  margin:0;
+  font-weight:400;
+  padding:0;
+  color:#363940
+ }
+ a {
+  color:#5867dd
+ }
+ #page-content {
+  flex: 1 0 auto;
+}
+
+}
+
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+  .logo-nav{
+    position: relative;
+    top: -32px;
+    left: 60px;
+  }
+  .container-1{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }.poster-btn button{
+    margin-top: 100px;
+  }
+  .box-1{
+
+  }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) and (orientation : portrait) {
+  .logo-nav{
+    position: relative;
+    top: -32px;
+    left: 60px;
+  }
+  .container-1{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }.poster-btn button{
+    margin-top: 100px;
+  }
+
+}
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) {
+  .logo-nav{
+    position: relative;
+    top: -32px;
+    left: 60px;
+  }
+  .container-1{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }.poster-btn button{
+    margin-top: 100px;
+  }
+}
+
+@media only screen 
+and (min-device-width : 480px) 
+and (max-device-width : 853px) 
+and (orientation : portrait) {
+  .logo-nav{
+    position: relative;
+    top: -32px;
+    left: 63px;
+  }
+  .container-1{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .poster-btn button{
+    margin-top: 100px;
+  }
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+	/* Styles Here */
+	.logo-nav{
+    position: relative;
+    top: -32px;
+    left: 78px;
+  }
+  .container-1{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .poster-btn button{
+    margin-top: 100px;
+  }
+  /* Index */
+/* #i1{
+    position: fixed; 
+    top:13%; 
+    left: 24%; 
+    height: 190px;
+    width: 190px;
+}
+#i2{
+    position: fixed; 
+    top:38%; 
+    left: 24%; 
+    height: 195px;
+    width: 195px;
+}
+#i3{
+    position: fixed; 
+    top:67%; 
+    left: 25%;
+    height: 182px;
+    width: 182px; 
+}
+*/
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : portrait) {
+  .logo-nav{
+    position: relative;
+    top: -32px;
+    left: 80px;
+  }
+  .container-1{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .poster-btn button{
+    margin-top: 100px;
+  }
+}

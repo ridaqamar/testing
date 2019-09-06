@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Human Flagship - Poster</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+        body {
+            background-image: url("imgs/abstract-painting-art-artistic-1573434.png");
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-2">
+            <a href="products.html">
+                <img src="imgs/back.png" class="back">
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="products.html"><img src="imgs/poster-banner.png" width="100%"></a>
+            </div>
+        </div>
+        <div class="row button-poster">
+
+            <div class="col-md-6">
+                <p class="poster-btn"><button src="Screenshot_2.png" onclick="showImage();">Click to view full-sized Poster! </button></p>
+                <img id="loadingImage" src="imgs/Screenshot_2.png" style="display: none" />
+            </div>
+            <div class="col-md-6">
+                <p class="poster-btn"><button>Buy Now!</button></p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+    function showImage() {
+        document.getElementById('loadingImage').style.display = "block";
+    }
+    (function($) {
+        $(document).on('contextmenu', 'img', function() {
+            return false;
+        })
+    })(jQuery);
+</script>
