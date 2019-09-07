@@ -95,7 +95,7 @@ and (orientation : portrait) {
 <body>
   <header>
     
-<div id="mySidenav" class="sidenav">
+<div id="mySidenav1" class="sidenav">
     <div id="nav-titles">
       
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -110,7 +110,7 @@ and (orientation : portrait) {
       </div>
     </div>
     </div>
-     <div class="hamburger" onclick="openNav()" id="mySidenav" >
+     <div class="hamburger" onclick="openNav()" id="mySidenav1" >
       <div class="top-bun"></div>
       <div class="meat"></div>
       <div class="bottom-bun"></div>
@@ -158,4 +158,20 @@ and (orientation : portrait) {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<script type="text/javascript" src="custom.js"></script>
+<script src="custom.js"></script>
+<script>
+    function openNav() {
+    if ($(window).width() < 768) {
+        document.getElementById("mySidenav1").style.width = "100%";
+
+
+    } else {
+        document.getElementById("mySidenav1").style.width = "35%";
+
+    }
+}
+
+function closeNav() {
+    document.getElementById("mySidenav1").style.width = "0%";
+}
+</script>

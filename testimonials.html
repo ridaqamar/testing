@@ -122,7 +122,7 @@ and (orientation : portrait) {
 
 <body>
  <header>
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav1" class="sidenav">
         <div id="nav-titles">
           
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -141,7 +141,7 @@ and (orientation : portrait) {
         <!-- <span style="font-size:60px;cursor:pointer" class="hamburger" onclick="openNav()">&#9776;
          <img src="imgs/bars-1.png"><a href="index.html"><img src="imgs/new-logo.png" width="100px"></a></span>
          -->
-         <div class="hamburger" onclick="openNav()" id="mySidenav" >
+         <div class="hamburger" onclick="openNav()" id="mySidenav1" >
           <div class="top-bun"></div>
           <div class="meat"></div>
           <div class="bottom-bun"></div>
@@ -307,27 +307,41 @@ and (orientation : portrait) {
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <script type="text/javascript" src="custom.js"></script>
 <script type="text/javascript">
-//     $(document).ready(function(){
-//   $(".btn-1").click(function(){
-//     $(".comment-1").fadeToggle("slow");
-//   });
-// });
-// $(document).ready(function(){
-//   $(".btn-2").click(function(){
-//     $(".comment-2").fadeToggle("slow");
-//   });
-// });
+    $(document).ready(function(){
+  $(".btn-1").click(function(){
+    $(".comment-1").fadeToggle("slow");
+  });
+});
+$(document).ready(function(){
+  $(".btn-2").click(function(){
+    $(".comment-2").fadeToggle("slow");
+  });
+});
 
-// $(document).ready(function(){
-//   $(".btn-3").click(function(){
-//     $(".comment-3").fadeToggle("slow");
-//   });
-// });
+$(document).ready(function(){
+  $(".btn-3").click(function(){
+    $(".comment-3").fadeToggle("slow");
+  });
+});
 
-// $(document).ready(function(){
-//   $(".btn-4").click(function(){
-//     $(".comment-4").fadeToggle("slow");
-//   });
-// });
+$(document).ready(function(){
+  $(".btn-4").click(function(){
+    $(".comment-4").fadeToggle("slow");
+  });
+});
+    function openNav() {
+    if ($(window).width() < 768) {
+        document.getElementById("mySidenav1").style.width = "100%";
+
+
+    } else {
+        document.getElementById("mySidenav1").style.width = "35%";
+
+    }
+}
+
+function closeNav() {
+    document.getElementById("mySidenav1").style.width = "0%";
+}
 
 </script>
