@@ -11,53 +11,242 @@
     <meta name="author" content="Bucky Maler">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .loader {
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        #preload {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fill 1s ease forwards 4s;
+        }
+        
+        #preload path:nth-child(2) {
+            stroke-dasharray: 330px;
+            stroke-dashoffset: 330px;
+            animation: line-anim 3s ease forwards;
+        }
+        
+        #preload path:nth-child(3) {
+            stroke-dasharray: 330px;
+            stroke-dashoffset: 330px;
+            animation: line-anim 3s ease forwards 0.2s;
+        }
+        
+        #preload path:nth-child(4) {
+            stroke-dasharray: 440px;
+            stroke-dashoffset: 440px;
+            animation: line-anim 3s ease forwards 0.4s;
+        }
+        
+        #preload path:nth-child(5) {
+            stroke-dasharray: 330px;
+            stroke-dashoffset: 330px;
+            animation: line-anim 3s ease forwards 0.6s;
+        }
+        
+        #preload path:nth-child(6) {
+            stroke-dasharray: 400px;
+            stroke-dashoffset: 400px;
+            animation: line-anim 3s ease forwards 0.8s;
+        }
+        
+        #preload path:nth-child(7) {
+            stroke-dasharray: 440px;
+            stroke-dashoffset: 440px;
+            animation: line-anim 3s ease forwards 0.9s;
+        }
+        
+        #preload path:nth-child(8) {
+            stroke-dasharray: 440px;
+            stroke-dashoffset: 440px;
+            animation: line-anim 3s ease forwards 1s;
+        }
+        
+        #preload path:nth-child(9) {
+            stroke-dasharray: 440px;
+            stroke-dashoffset: 440px;
+            animation: line-anim 3s ease forwards .2s;
+        }
+        
+        #preload path:nth-child(10) {
+            stroke-dasharray: 440px;
+            stroke-dashoffset: 440px;
+            animation: line-anim 3s ease forwards .4s;
+        }
+        
+        #preload path:nth-child(11) {
+            stroke-dasharray: 440px;
+            stroke-dashoffset: 440px;
+            animation: line-anim 3s ease forwards .5s;
+        }
+        
+        #preload path:nth-child(12) {
+            stroke-dasharray: 440px;
+            stroke-dashoffset: 440px;
+            animation: line-anim 3s ease forwards .5s;
+        }
+        
+        #preload path:nth-child(13) {
+            stroke-dasharray: 440px;
+            stroke-dashoffset: 440px;
+            animation: line-anim 3s ease forwards .7s;
+        }
+        
+        #preload path:nth-child(14) {
+            stroke-dasharray: 440px;
+            stroke-dashoffset: 440px;
+            animation: line-anim 3s ease forwards .8s;
+        }
+        
+        #preload path:nth-child(15) {
+            stroke-dasharray: 440px;
+            stroke-dashoffset: 440px;
+            animation: line-anim 3s ease forwards .9s;
+        }
+        
+        @keyframes line-anim {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        
+        @keyframes fill {
+            from {
+                fill: transparent;
+            }
+            to {
+                fill: white;
+            }
+        }
+    </style>
 </head>
 
 <body style="background-image: url('imgs/abstract-1277156_1920.png')">
+    <div class="loader">
+        <svg width="513" height="184" viewBox="0 0 513 184" fill="none" xmlns="http://www.w3.org/2000/svg" id="preload">
+        <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0.207184" y="0.839996" width="513" height="183"
+            fill="black">
+            <rect fill="white" x="0.207184" y="0.839996" width="513" height="183" />
+            <path d="M147.95 3.84V60H134.27V36.88H112.99V60H99.31V3.84H112.99V25.84H134.27V3.84H147.95Z" />
+            <path
+                d="M174.466 3.84V37.44C174.466 40.8 175.292 43.3867 176.946 45.2C178.599 47.0133 181.026 47.92 184.226 47.92C187.426 47.92 189.879 47.0133 191.586 45.2C193.292 43.3867 194.146 40.8 194.146 37.44V3.84H207.826V37.36C207.826 42.3733 206.759 46.6133 204.626 50.08C202.492 53.5467 199.612 56.16 195.986 57.92C192.412 59.68 188.412 60.56 183.986 60.56C179.559 60.56 175.586 59.7067 172.066 58C168.599 56.24 165.852 53.6267 163.826 50.16C161.799 46.64 160.786 42.3733 160.786 37.36V3.84H174.466Z" />
+            <path
+                d="M284.232 3.84V60H270.552V26.32L257.992 60H246.952L234.312 26.24V60H220.632V3.84H236.792L252.552 42.72L268.152 3.84H284.232Z" />
+            <path
+                d="M332.229 50.08H311.269L307.909 60H293.589L313.909 3.84H329.749L350.069 60H335.589L332.229 50.08ZM328.709 39.52L321.749 18.96L314.869 39.52H328.709Z" />
+            <path d="M409.694 60H396.014L373.134 25.36V60H359.454V3.84H373.134L396.014 38.64V3.84H409.694V60Z" />
+            <path
+                d="M42.8072 141.6C41.7938 139.733 40.3272 138.32 38.4072 137.36C36.5405 136.347 34.3272 135.84 31.7672 135.84C27.3405 135.84 23.7939 137.307 21.1272 140.24C18.4605 143.12 17.1272 146.987 17.1272 151.84C17.1272 157.013 18.5139 161.067 21.2872 164C24.1139 166.88 27.9805 168.32 32.8872 168.32C36.2472 168.32 39.0739 167.467 41.3672 165.76C43.7139 164.053 45.4205 161.6 46.4872 158.4H29.1272V148.32H58.8872V161.04C57.8739 164.453 56.1405 167.627 53.6872 170.56C51.2872 173.493 48.2205 175.867 44.4872 177.68C40.7539 179.493 36.5405 180.4 31.8472 180.4C26.3005 180.4 21.3405 179.2 16.9672 176.8C12.6472 174.347 9.26052 170.96 6.80718 166.64C4.40718 162.32 3.20718 157.387 3.20718 151.84C3.20718 146.293 4.40718 141.36 6.80718 137.04C9.26052 132.667 12.6472 129.28 16.9672 126.88C21.2872 124.427 26.2205 123.2 31.7672 123.2C38.4872 123.2 44.1405 124.827 48.7272 128.08C53.3672 131.333 56.4339 135.84 57.9272 141.6H42.8072Z" />
+            <path
+                d="M83.3447 134.8V146.16H101.665V156.72H83.3447V169.04H104.065V180H69.6647V123.84H104.065V134.8H83.3447Z" />
+            <path
+                d="M166.386 180H152.706L129.826 145.36V180H116.146V123.84H129.826L152.706 158.64V123.84H166.386V180Z" />
+            <path
+                d="M193.182 134.8V146.16H211.502V156.72H193.182V169.04H213.902V180H179.502V123.84H213.902V134.8H193.182Z" />
+            <path
+                d="M260.943 170.08H239.983L236.623 180H222.303L242.623 123.84H258.463L278.783 180H264.303L260.943 170.08ZM257.423 159.52L250.463 138.96L243.583 159.52H257.423Z" />
+            <path d="M301.848 169.44H319.768V180H288.168V123.84H301.848V169.44Z" />
+            <path
+                d="M356.053 180.56C350.773 180.56 345.919 179.333 341.493 176.88C337.119 174.427 333.626 171.013 331.013 166.64C328.453 162.213 327.173 157.253 327.173 151.76C327.173 146.267 328.453 141.333 331.013 136.96C333.626 132.587 337.119 129.173 341.493 126.72C345.919 124.267 350.773 123.04 356.053 123.04C361.333 123.04 366.16 124.267 370.533 126.72C374.96 129.173 378.426 132.587 380.933 136.96C383.493 141.333 384.773 146.267 384.773 151.76C384.773 157.253 383.493 162.213 380.933 166.64C378.373 171.013 374.906 174.427 370.533 176.88C366.16 179.333 361.333 180.56 356.053 180.56ZM356.053 168.08C360.533 168.08 364.106 166.587 366.773 163.6C369.493 160.613 370.853 156.667 370.853 151.76C370.853 146.8 369.493 142.853 366.773 139.92C364.106 136.933 360.533 135.44 356.053 135.44C351.519 135.44 347.893 136.907 345.173 139.84C342.506 142.773 341.173 146.747 341.173 151.76C341.173 156.72 342.506 160.693 345.173 163.68C347.893 166.613 351.519 168.08 356.053 168.08Z" />
+            <path
+                d="M432.863 141.6C431.85 139.733 430.383 138.32 428.463 137.36C426.597 136.347 424.383 135.84 421.823 135.84C417.397 135.84 413.85 137.307 411.183 140.24C408.517 143.12 407.183 146.987 407.183 151.84C407.183 157.013 408.57 161.067 411.343 164C414.17 166.88 418.037 168.32 422.943 168.32C426.303 168.32 429.13 167.467 431.423 165.76C433.77 164.053 435.477 161.6 436.543 158.4H419.183V148.32H448.943V161.04C447.93 164.453 446.197 167.627 443.743 170.56C441.343 173.493 438.277 175.867 434.543 177.68C430.81 179.493 426.597 180.4 421.903 180.4C416.357 180.4 411.397 179.2 407.023 176.8C402.703 174.347 399.317 170.96 396.863 166.64C394.463 162.32 393.263 157.387 393.263 151.84C393.263 146.293 394.463 141.36 396.863 137.04C399.317 132.667 402.703 129.28 407.023 126.88C411.343 124.427 416.277 123.2 421.823 123.2C428.543 123.2 434.197 124.827 438.783 128.08C443.423 131.333 446.49 135.84 447.983 141.6H432.863Z" />
+            <path
+                d="M507.881 123.84L488.441 161.44V180H474.761V161.44L455.321 123.84H470.841L481.721 147.36L492.521 123.84H507.881Z" />
+        </mask>
+        <path d="M147.95 3.84V60H134.27V36.88H112.99V60H99.31V3.84H112.99V25.84H134.27V3.84H147.95Z" stroke="white"
+            stroke-width="6" mask="url(#path-1-outside-1)" />
+        <path
+            d="M174.466 3.84V37.44C174.466 40.8 175.292 43.3867 176.946 45.2C178.599 47.0133 181.026 47.92 184.226 47.92C187.426 47.92 189.879 47.0133 191.586 45.2C193.292 43.3867 194.146 40.8 194.146 37.44V3.84H207.826V37.36C207.826 42.3733 206.759 46.6133 204.626 50.08C202.492 53.5467 199.612 56.16 195.986 57.92C192.412 59.68 188.412 60.56 183.986 60.56C179.559 60.56 175.586 59.7067 172.066 58C168.599 56.24 165.852 53.6267 163.826 50.16C161.799 46.64 160.786 42.3733 160.786 37.36V3.84H174.466Z"
+            stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+        <path
+            d="M284.232 3.84V60H270.552V26.32L257.992 60H246.952L234.312 26.24V60H220.632V3.84H236.792L252.552 42.72L268.152 3.84H284.232Z"
+            stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+        <path
+            d="M332.229 50.08H311.269L307.909 60H293.589L313.909 3.84H329.749L350.069 60H335.589L332.229 50.08ZM328.709 39.52L321.749 18.96L314.869 39.52H328.709Z"
+            stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+        <path d="M409.694 60H396.014L373.134 25.36V60H359.454V3.84H373.134L396.014 38.64V3.84H409.694V60Z"
+            stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+        <path
+            d="M42.8072 141.6C41.7938 139.733 40.3272 138.32 38.4072 137.36C36.5405 136.347 34.3272 135.84 31.7672 135.84C27.3405 135.84 23.7939 137.307 21.1272 140.24C18.4605 143.12 17.1272 146.987 17.1272 151.84C17.1272 157.013 18.5139 161.067 21.2872 164C24.1139 166.88 27.9805 168.32 32.8872 168.32C36.2472 168.32 39.0739 167.467 41.3672 165.76C43.7139 164.053 45.4205 161.6 46.4872 158.4H29.1272V148.32H58.8872V161.04C57.8739 164.453 56.1405 167.627 53.6872 170.56C51.2872 173.493 48.2205 175.867 44.4872 177.68C40.7539 179.493 36.5405 180.4 31.8472 180.4C26.3005 180.4 21.3405 179.2 16.9672 176.8C12.6472 174.347 9.26052 170.96 6.80718 166.64C4.40718 162.32 3.20718 157.387 3.20718 151.84C3.20718 146.293 4.40718 141.36 6.80718 137.04C9.26052 132.667 12.6472 129.28 16.9672 126.88C21.2872 124.427 26.2205 123.2 31.7672 123.2C38.4872 123.2 44.1405 124.827 48.7272 128.08C53.3672 131.333 56.4339 135.84 57.9272 141.6H42.8072Z"
+            stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+        <path d="M83.3447 134.8V146.16H101.665V156.72H83.3447V169.04H104.065V180H69.6647V123.84H104.065V134.8H83.3447Z"
+            stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+        <path d="M166.386 180H152.706L129.826 145.36V180H116.146V123.84H129.826L152.706 158.64V123.84H166.386V180Z"
+            stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+        <path d="M193.182 134.8V146.16H211.502V156.72H193.182V169.04H213.902V180H179.502V123.84H213.902V134.8H193.182Z"
+            stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+        <path
+            d="M260.943 170.08H239.983L236.623 180H222.303L242.623 123.84H258.463L278.783 180H264.303L260.943 170.08ZM257.423 159.52L250.463 138.96L243.583 159.52H257.423Z"
+            stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+        <path d="M301.848 169.44H319.768V180H288.168V123.84H301.848V169.44Z" stroke="white" stroke-width="6"
+            mask="url(#path-1-outside-1)" />
+        <path
+            d="M356.053 180.56C350.773 180.56 345.919 179.333 341.493 176.88C337.119 174.427 333.626 171.013 331.013 166.64C328.453 162.213 327.173 157.253 327.173 151.76C327.173 146.267 328.453 141.333 331.013 136.96C333.626 132.587 337.119 129.173 341.493 126.72C345.919 124.267 350.773 123.04 356.053 123.04C361.333 123.04 366.16 124.267 370.533 126.72C374.96 129.173 378.426 132.587 380.933 136.96C383.493 141.333 384.773 146.267 384.773 151.76C384.773 157.253 383.493 162.213 380.933 166.64C378.373 171.013 374.906 174.427 370.533 176.88C366.16 179.333 361.333 180.56 356.053 180.56ZM356.053 168.08C360.533 168.08 364.106 166.587 366.773 163.6C369.493 160.613 370.853 156.667 370.853 151.76C370.853 146.8 369.493 142.853 366.773 139.92C364.106 136.933 360.533 135.44 356.053 135.44C351.519 135.44 347.893 136.907 345.173 139.84C342.506 142.773 341.173 146.747 341.173 151.76C341.173 156.72 342.506 160.693 345.173 163.68C347.893 166.613 351.519 168.08 356.053 168.08Z"
+            stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+        <path
+            d="M432.863 141.6C431.85 139.733 430.383 138.32 428.463 137.36C426.597 136.347 424.383 135.84 421.823 135.84C417.397 135.84 413.85 137.307 411.183 140.24C408.517 143.12 407.183 146.987 407.183 151.84C407.183 157.013 408.57 161.067 411.343 164C414.17 166.88 418.037 168.32 422.943 168.32C426.303 168.32 429.13 167.467 431.423 165.76C433.77 164.053 435.477 161.6 436.543 158.4H419.183V148.32H448.943V161.04C447.93 164.453 446.197 167.627 443.743 170.56C441.343 173.493 438.277 175.867 434.543 177.68C430.81 179.493 426.597 180.4 421.903 180.4C416.357 180.4 411.397 179.2 407.023 176.8C402.703 174.347 399.317 170.96 396.863 166.64C394.463 162.32 393.263 157.387 393.263 151.84C393.263 146.293 394.463 141.36 396.863 137.04C399.317 132.667 402.703 129.28 407.023 126.88C411.343 124.427 416.277 123.2 421.823 123.2C428.543 123.2 434.197 124.827 438.783 128.08C443.423 131.333 446.49 135.84 447.983 141.6H432.863Z"
+            stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+        <path
+            d="M507.881 123.84L488.441 161.44V180H474.761V161.44L455.321 123.84H470.841L481.721 147.36L492.521 123.84H507.881Z"
+            stroke="white" stroke-width="6" mask="url(#path-1-outside-1)" />
+    </svg>
 
+    </div>
     <div class="perspective effect-rotate-left">
-            <div class="container">
-                <div class="outer-nav--return"></div>
-                <div id="viewport" class="l-viewport" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                    <div class="l-wrapper">
-                        <header class="header">
-                            <div class="hamburger" onclick="openNav()" id="mySidenav1">
-                                <div class="top-bun"></div>
-                                <div class="meat"></div>
-                                <div class="bottom-bun"></div>
-                            </div>
-                            <a href="index.html"><img src="imgs/imageedit_2_5718680080.png" class="" style=" width: 100px;
+        <div class="container">
+            <div class="outer-nav--return"></div>
+            <div id="viewport" class="l-viewport" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                <div class="l-wrapper">
+                    <header class="header">
+                        <div class="hamburger" onclick="openNav()" id="mySidenav1">
+                            <div class="top-bun"></div>
+                            <div class="meat"></div>
+                            <div class="bottom-bun"></div>
+                        </div>
+                        <a href="index.html"><img src="imgs/imageedit_2_5718680080.png" class="" style=" width: 100px;
         padding-top: 37%;
     "></a>
-    
-    
-                            <div id="mySidenav11" class="sidenav">
-                                <div id="nav-titles">
-    
-                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                    <div class="links">
-                                        <a href="index.html"><img src="imgs/new-logo.png" width="150px"></a>
-                                        <a href="index.html">Home</a>
-                                        <a href="products.html">Products</a>
-                                        <a href="news.html">News & Events</a>
-                                        <a href="author.html">About The Author</a>
-                                        <a href="Testimonials.html">Testimonials</a>
-                                        <a href="contact.html">Contact Us</a>
-                                    </div>
+
+
+                        <div id="mySidenav11" class="sidenav">
+                            <div id="nav-titles">
+
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <div class="links">
+                                    <a href="index.html"><img src="imgs/new-logo.png" width="150px"></a>
+                                    <a href="index.html">Home</a>
+                                    <a href="products.html">Products</a>
+                                    <a href="news.html">News & Events</a>
+                                    <a href="author.html">About The Author</a>
+                                    <a href="Testimonials.html">Testimonials</a>
+                                    <a href="contact.html">Contact Us</a>
                                 </div>
                             </div>
-                            <!-- <span style="font-size:60px;cursor:pointer" class="hamburger" onclick="openNav()">&#9776;
+                        </div>
+                        <!-- <span style="font-size:60px;cursor:pointer" class="hamburger" onclick="openNav()">&#9776;
                              <img src="imgs/bars-1.png"><a href="index.php"><img src="imgs/new-logo.png" width="100px"></a></span>
                              -->
-                            <!-- <a class="device-notification--logo" href="#0">
+                        <!-- <a class="device-notification--logo" href="#0">
                                 <img src="assets/img/logo.png" alt="Global">
                                 <p>Global</p>
                             </a> -->
-    
-    
-    
-    
-                       </header>
+
+
+
+
+                    </header>
 
                     <ul class="l-main-content main-content">
 
@@ -70,7 +259,7 @@
                                                 <div class="slider--item-image">
                                                     <img src="imgs/b2.png" alt="Victory">
                                                 </div>
-                                                
+
                                             </a>
                                         </li>
                                         <li class="slider--item slider--item-center">
@@ -78,7 +267,7 @@
                                                 <div class="slider--item-image">
                                                     <img src="imgs/b1 (1).png" alt="Metiew and Smith">
                                                 </div>
-                                                
+
                                             </a>
                                         </li>
                                         <li class="slider--item slider--item-right">
@@ -86,7 +275,7 @@
                                                 <div class="slider--item-image">
                                                     <img src="imgs/testimonial-button-updated (4).png" alt="Alex Nowak">
                                                 </div>
-                                                
+
                                             </a>
                                         </li>
                                     </ul>
@@ -130,7 +319,11 @@
     </script>
     <script src="assets/js/functions-min.js"></script>
     <script src="custom.js"></script>
-
+    <script>
+        setTimeout(function() {
+            $(".loader").hide();
+        }, 3000);
+    </script>
 </body>
 
 </html>
